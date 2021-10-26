@@ -26,11 +26,7 @@ import sys
 import os
 from docutils.parsers.rst import Directive, directives
 from docutils import nodes
-
-if sys.version_info.major == 2:
-    from StringIO import StringIO
-else:
-    from io import StringIO
+from io import StringIO
 
 # execute_code function thanks to Stackoverflow code post from hekevintran
 # https://stackoverflow.com/questions/701802/how-do-i-execute-a-string-containing-python-code-in-python
@@ -74,8 +70,8 @@ class ExecuteCode(Directive):
             'foobar'
         """
 
-        output = StringIO.StringIO()
-        err = StringIO.StringIO()
+        output = StringIO()
+        err = StringIO()
 
         sys.stdout = output
         sys.stderr = err
