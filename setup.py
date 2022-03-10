@@ -8,7 +8,7 @@ def readme():
         return filename.read()
 setup(
     name='sphinx_execute_code_python3',
-    version='0.2a2',
+    version='0.3',
     platforms=['any'],
     packages=['sphinx_execute_code'],
     url='https://github.com/GrandMoff100/sphinx-execute-code',
