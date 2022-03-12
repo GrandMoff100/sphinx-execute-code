@@ -1,6 +1,8 @@
 sphinx-execute-code
 ===================
 
+**Deprecated: please see sphinx-exec-code over at https://sphinx-exec-code.readthedocs.io/en/latest/description.html#without-options for better python3 solution.**
+
 Sphinx-execute-code is an extension for Sphinx that allows a document author
 to insert arbitrary python code samples in code blocks, or run python code
 from python files on the filesystem.
@@ -10,6 +12,7 @@ relied on doctest formats, and attempts to be more flexible, similar to
 literal-block and code-block statements.
 
 .. warning:: This module allows you to run arbitrary code, and should be treated with caution.
+
 
 Options
 -------
